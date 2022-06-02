@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Pedra, Papel ou Tesoura</h1>
+    </header>
+    <main>
+        <div class="points-box-container">
+            <div class="point-box">
+                <div>
+                    <h4>Adversário</h4>
+                </div>
+                <span id="computer-point">0</span>
+            </div>
+            <div class="point-box">
+                <div>
+                    <h4>Você</h4>
+                </div>
+                <span id="user-point">0</span>
+            </div>
+        </div>
+        <div class="game-choice-box-container">
+            <div class="game-choices-box">
+                <div class="computer-choice-box">
+                    <div class="player-text">
+                        <h4>Escolha do adversário</h4>
+                    </div>
+                    <div class="computer-choice" >
+                        <h4 id="computer-choice"></h4>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="vs">X</h3>
+                </div>
+                <div class="user-choice-box">
+                    <div class="player-text">
+                        <h4>Sua escolha</h4>
+                    </div>
+                    <div class="user-choice" >
+                        <h4 id="user-choice"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="game-main" class="player-choices-container">
+            <h2 id="result">Resultado</h2>
+            <div class="player-choices-box">
+                <button id="play-rock" value="Pedra">Pedra</button>
+                <button id="play-paper" value="Papel">Papel</button>
+                <button id="play-scissors" value="Tesoura">Tesoura</button>
+            </div>
+        </div>
+        <div id="game-reload">
+            <div class="game-end-result">
+                <h2 id="end-result"></h2>
+                <button id="reload-button">Jogar de Novo</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
